@@ -1,0 +1,12 @@
+<template>
+    <lightning-record-form
+        object-api-name="Contact"
+        record-id={contactId}
+        layout-type="Full"
+        columns = "2"
+        mode = "edit"
+        onsuccess={handleSuccess}
+        oncancel={handleCancel}
+    >
+    </lightning-record-form>
+</template>

@@ -1,0 +1,23 @@
+<template>
+    <div class = "wrapper">
+    <section class="content">
+        <div class="columns">
+        <main class="main" >
+            <div>
+                <lightning-layout>
+                    <lightning-layout-item>
+                        <lightning-vertical-navigation selected-item={selectedItem} onselect={handleSelect} class="navigation">
+                            <lightning-vertical-navigation-section label="Contacts">
+                                <template for:each={contacts} for:item="contact">
+                                    <lightning-vertical-navigation-item-icon key={contact.Id} label={contact.Name} name={contact.Id} icon-name="utility:user"></lightning-vertical-navigation-item-icon>
+                                </template>
+                            </lightning-vertical-navigation-section>
+                        </lightning-vertical-navigation>
+                    </lightning-layout-item>
+                </lightning-layout>
+            </div>
+        </main>
+        </div>
+    </section>
+    </div>
+</template>

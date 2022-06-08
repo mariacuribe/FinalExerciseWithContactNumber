@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+  } 
+  .wrapper{
+    min-height: 100vh;
+    background: #ccc;
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    display: flex;
+    flex: 1;
+    background: #999;
+    color: #000; 
+  }
+  .columns{
+    display: flex;
+    flex:1;
+  }
+  .main{
+    flex: 1;
+    order: 2;
+    background: #eee;
+  }
+  .sidebar-first{
+    background: #ccc;
+    order: 1;
+  }
+  .sidebar-second{ 
+    order: 3;
+    background: #ddd;
+  }
